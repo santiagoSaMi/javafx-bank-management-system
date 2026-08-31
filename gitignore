@@ -1,0 +1,21 @@
+# Carpetas generadas por el build de NetBeans/Ant
+build/
+dist/
+
+# Configuración local del proyecto (específica de tu máquina)
+nbproject/private/
+
+# Archivos de log y temporales
+*.log
+*~
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de otros IDEs (por si acaso abres esto en IntelliJ/Eclipse después)
+.idea/
+*.iml
+.classpath
+.project
+.settings/
