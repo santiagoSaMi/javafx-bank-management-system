@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AllClientesController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="687.0" style="-fx-border-color: #000000; -fx-background-color: #c0c0c0;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="76.0" text="Género:">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="33.0" prefWidth="91.0" text="Producto:">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="453.0" layoutY="14.0" prefHeight="33.0" prefWidth="91.0" text="Buscar Nombre:">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbx_genero" layoutX="82.0" layoutY="18.0" onAction="#doFilGenero" prefHeight="25.0" prefWidth="139.0" promptText="Seleccionar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="cbx_producto" layoutX="305.0" layoutY="18.0" onAction="#doFilProducto" prefHeight="25.0" prefWidth="139.0" promptText="Seleccionar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <TextField fx:id="txf_nombre" layoutX="555.0" layoutY="18.0" onKeyReleased="#doFilNombre" onKeyTyped="#validaNombre" prefHeight="25.0" prefWidth="116.0">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font></TextField>
+            <TableView fx:id="tbl_clientes" layoutX="14.0" layoutY="67.0" onMouseClicked="#doPoneFoto" prefHeight="222.0" prefWidth="449.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="128.0000057220459" text="ID" />
+                <TableColumn fx:id="col_nombre" prefWidth="266.39996337890625" text="Nombres y apellidos" />
+                  <TableColumn fx:id="col_genero" prefWidth="56.79998779296875" text="Género" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Pane layoutX="473.0" layoutY="67.0" prefHeight="222.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fx:id="img_foto" fitHeight="200.0" fitWidth="180.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Button fx:id="btn_atras" layoutX="14.0" layoutY="303.0" mnemonicParsing="false" onAction="#doAtras" prefHeight="33.0" prefWidth="656.0" text="Regresar" textFill="#fc0000">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

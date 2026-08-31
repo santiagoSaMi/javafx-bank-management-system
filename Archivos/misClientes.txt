@@ -1,0 +1,6 @@
+159456,Phoenix Wright,phoenix.jpg,1234,M,true,false,false,false,false
+786345,Maya Fey,maya.jpg,7894,F,true,false,false,false,false
+258963,Mia Fey,mia.jpg,4568,F,true,true,false,true,false
+951753,Miles Edgeworth,miles.jpg,4321,M,true,true,true,true,true
+951847,Franziska Von Karma,franziska.jpg,9635,F,false,false,true,true,true
+852636,Diego Armando,godot.jpg,7895,M,true,false,true,false,false
